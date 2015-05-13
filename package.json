@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ldougher06/ghpages-workflow/issues"
   },
-  "homepage": "https://github.com/ldougher06/ghpages-workflow"
+  "homepage": "https://github.com/ldougher06/ghpages-workflow",
+  "devDependencies": {
+    "jade": "^1.9.2",
+    "node-sass": "^3.1.0"
+  }
 }
