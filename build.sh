@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#install dependencies
+npm install
+bower install
+
 #clean and prepare publib directory
 rm -rf public
 cp -r src public
@@ -24,7 +28,9 @@ rm -rf src/*.html \
 ./node_modules/.bin/babel src --out-dir public -s inline
 
 #concat bower_components to public/lib directory
+if [ -d "bower_components" ]; then
 ./node_modules/.bin/bowcat . -o public/lib -m
+fi
 
 #clean unneeded files
 rm -rf public/_styles \
