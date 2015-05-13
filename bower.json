@@ -1,0 +1,17 @@
+{
+  "name": "ghpages-workflow",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ldougher06/ghpages-workflow",
+  "authors": [
+    "logan dougher <logan.dougher@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
