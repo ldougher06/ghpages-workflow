@@ -1,7 +1,7 @@
 #!/bin/sh
 
-npm install
-bower install
+#npm install
+#bower install
 
 # clean and prepare public directory
 # rm -rf public
@@ -13,7 +13,7 @@ bower install
 
 # compile sass to css
 # ./node_modules/.bin/node-sass \
-    --output-style compressed \
+#   --output-style compressed \
 #   --source-map-embed \
 #   src/_styles/main.scss public/css/main.css
 
@@ -21,9 +21,9 @@ bower install
 # ./node_modules/.bin/babel src --out-dir public -s inline
 
 # concat bower_components to public/lib directory
-if [ -d "bower_components" ]; then
-  ./node_modules/.bin/bowcat -o public/lib
-fi
+# if [ -d "bower_components" ]; then
+#   ./node_modules/.bin/bowcat -o public/lib
+# fi
 
 # clean unneeded files
 # rm -rf public/_styles \
